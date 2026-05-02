@@ -31,6 +31,8 @@ A key design choice was using a **Bridged Network** for all Virtual Machines rat
 
 ---
 
+> **Note on SIEM**: I have already talked about the setup and the setup process in my previous project on "DVWA".
+
 ## 🛠️ Technology Stack
 This project integrates multiple industry-standard tools to ensure its create telemetry as close as it can be to a real attack:
 
