@@ -61,9 +61,8 @@ Running a multi-VM lab with a SIEM stack is resource-intensive. Below are the sp
 
 | Component | Recommended Specs |
 | :--- | :--- |
-| **CPU** |  6+ Cores (12+ Threads) |
-| **RAM** |  32 GB (16 GB Minimum) |
-| **Storage** | 500GB+ NVMe SSD |
-| **OS** | Windows 10/11 or Linux |
+| **RAM** |  16 GB |
+| **Storage** | 250GB+ NVMe SSD |
 
+> **Note on Specs**: We won't be using all of it, but its good to have just enough to ensure a smooth experience
 > **Note on RAM Allocation**: The ELK stack (Elasticsearch) and Windows Server are the most resource-heavy. Ensure your host machine has enough overhead to prevent system instability during simulation.
