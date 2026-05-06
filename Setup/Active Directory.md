@@ -73,3 +73,23 @@ From there, it is pretty simple. Just like you would in standard Windows, you ne
 <img width="436" height="373" alt="Password_Creation" src="https://github.com/user-attachments/assets/fec9dbdd-7994-4ec1-b9c0-012b311dbdad" />
 
 > **Note**: In the password section, make sure to untick the **User must change password at next logon** option since we want to keep the password the same for the lab. You can keep it on if that is what you specifically want to do for your project.
+
+# Windows Workstation Configuration
+
+Now for the most crucial step. On your Windows machine, go to your IP settings and change your Preferred DNS to the IP address of the Domain Controller. This is necessary so the workstation can resolve the domain name and find the DC on the network.
+
+After that, search for "View advanced system settings" in the taskbar. A **System Properties** window will open. From there, navigate to **Computer Name > Change**. 
+
+In the "Member of" section, select **Domain** and type in your Domain Name (e.g., `oracle.local`). 
+
+### Handling the DNS Error
+If you do not change your DNS to the Domain Controller's IP address before attempting to join, you will receive the following error message because the workstation cannot locate the domain:
+
+<img width="1027" height="836" alt="Common_Error_Change_DNS_to_AD_IP" src="https://github.com/user-attachments/assets/87e1569e-74d9-4d55-add5-2db5d8961ceb" />
+
+### Finalizing the Join
+Once you enter the correct domain and click OK, a prompt will appear asking for a user with permission to join the domain (you can use your Administrator credentials here). After the credentials are accepted, you will get a "Welcome to the domain" message.
+
+> **Note**: You must restart the computer to apply these changes and officially join the workstation to the domain.
+
+
